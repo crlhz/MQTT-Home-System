@@ -2,7 +2,7 @@
 
 **MQTT Home** is an MQTT based IoT system, developed for the master's thesis. It is a set of devices and programs, which allows to measure physical quantities and control typical home devices. The application of an open-source protocol, such as MQTT, allows a user to add any compatible device to the existing IoT network and gives much more control over transmission and security. The core of the MQTT Home System is **Raspberry Pi**, which runs MQTT Broker, the database and website for measurement presentations and client device’s control. Wireless communication between broker and clients is ensured by a router. A diagram of the example network with three client devices is presented below.
 
-<img src="https://imgur.com/v2wLpnS.jpg" width="500">
+<img src="https://imgur.com/ZY1JX3o.jpg" width="500">
 
 # Client Device - Colibri
 
@@ -69,7 +69,7 @@ By clicking on a specific box, the user is able to open the chart view. The char
 
 The website’s project consists of three controllers: *Controller.php*, which is created by default as a Laravel Base Controller, together with *MainController.php* and *ChartController.php*, that form the core of the whole application. Both are responsible for retrieving data from the database, processing them into appropriate form and passing to the frontend section. This section is developed by using the Blade templates engine. In the *app.blade.php* file, the overall template of the website was designed, while in *main.blade.php* and *chart.blade.php* the specific content of both views is described. As mentioned before, the homepage consists of boxes representing every available topic. Clicking on any of them redirects to *home.test/chart/n*, where *n* stands for the topic identifier. At this address, a chart related to the chosen topic is displayed. The website project scheme is presented below.
 
-![MQTT website's project scheme](https://imgur.com/nEJvg7a.jpg)
+![MQTT website's project scheme](https://imgur.com/CasQ8Ub.jpg)
 
 # Server configuration
 The last but not least element of the MQTT Home System is the server system. It provides the following functionality: 

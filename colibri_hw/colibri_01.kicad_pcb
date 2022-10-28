@@ -2836,7 +2836,7 @@
   (gr_text "IO13" (at 177.7 70.85) (layer "F.SilkS") (tstamp 53e34696-241f-47e5-a477-f469335c8a61)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (gr_text "COLIBRI v1.0" (at 130 119.25) (layer "F.SilkS") (tstamp 5a222fb6-5159-4931-9015-19df65643140)
+  (gr_text "COLIBRI v1.0.1" (at 130.45 119.23) (layer "F.SilkS") (tstamp 5a222fb6-5159-4931-9015-19df65643140)
     (effects (font (size 2 2) (thickness 0.15)))
   )
   (gr_text "IO2" (at 178.2 78.5) (layer "F.SilkS") (tstamp 6325c32f-c82a-4357-b022-f9c7e76f412e)
