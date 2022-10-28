@@ -1,0 +1,284 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 4900 3850 0    50   Input ~ 0
+3.3v
+$Comp
+L power:GND #PWR07
+U 1 1 61AB097B
+P 6750 3850
+F 0 "#PWR07" H 6750 3600 50  0001 C CNN
+F 1 "GND" H 6755 3677 50  0000 C CNN
+F 2 "" H 6750 3850 50  0001 C CNN
+F 3 "" H 6750 3850 50  0001 C CNN
+	1    6750 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Sensor_Temperature:DS18B20 U2
+U 1 1 61AB0C1C
+P 9350 3450
+F 0 "U2" H 9120 3496 50  0000 R CNN
+F 1 "DS18B20" H 9120 3405 50  0000 R CNN
+F 2 "Package_TO_SOT_THT:TO-92" H 8350 3200 50  0001 C CNN
+F 3 "http://datasheets.maximintegrated.com/en/ds/DS18B20.pdf" H 9200 3700 50  0001 C CNN
+	1    9350 3450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 61AB3329
+P 8950 3200
+F 0 "R7" H 8880 3154 50  0000 R CNN
+F 1 "4.7k" H 8880 3245 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8880 3200 50  0001 C CNN
+F 3 "~" H 8950 3200 50  0001 C CNN
+	1    8950 3200
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8950 3350 8950 3450
+Connection ~ 8950 3450
+Wire Wire Line
+	8950 3450 9050 3450
+Wire Wire Line
+	8950 3050 9350 3050
+Wire Wire Line
+	9350 3050 9350 3150
+Text GLabel 9350 2900 1    50   Input ~ 0
+3.3v
+Wire Wire Line
+	9350 3050 9350 2900
+Connection ~ 9350 3050
+$Comp
+L power:GND #PWR010
+U 1 1 61AB4452
+P 9350 3750
+F 0 "#PWR010" H 9350 3500 50  0001 C CNN
+F 1 "GND" H 9355 3577 50  0000 C CNN
+F 2 "" H 9350 3750 50  0001 C CNN
+F 3 "" H 9350 3750 50  0001 C CNN
+	1    9350 3750
+	1    0    0    -1  
+$EndComp
+Text GLabel 8950 3450 3    50   Input ~ 0
+onewire
+Text GLabel 4600 3450 0    50   Input ~ 0
+gpio16
+Wire Wire Line
+	4600 3450 4950 3450
+Text GLabel 4750 3150 0    50   Input ~ 0
+rest
+Text GLabel 7050 2600 1    50   Input ~ 0
+RX
+Wire Wire Line
+	6750 3150 6750 2800
+$Comp
+L Device:R R5
+U 1 1 61AB747A
+P 6900 2800
+F 0 "R5" V 7107 2800 50  0000 C CNN
+F 1 "120" V 7016 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6830 2800 50  0001 C CNN
+F 3 "~" H 6900 2800 50  0001 C CNN
+	1    6900 2800
+	0    -1   -1   0   
+$EndComp
+Connection ~ 6750 2800
+Wire Wire Line
+	6750 2800 6750 2600
+Wire Wire Line
+	6750 3250 7050 3250
+Wire Wire Line
+	7050 3250 7050 2800
+Wire Wire Line
+	7050 2600 7050 2800
+Connection ~ 7050 2800
+Text GLabel 6750 2600 1    50   Input ~ 0
+TX
+$Comp
+L Device:C C2
+U 1 1 61AA4A8F
+P 4950 4050
+F 0 "C2" H 5065 4096 50  0000 L CNN
+F 1 "100n" H 5065 4005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 4988 3900 50  0001 C CNN
+F 3 "~" H 4950 4050 50  0001 C CNN
+	1    4950 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 3850 4950 3850
+Wire Wire Line
+	4950 3850 4950 3900
+$Comp
+L power:GND #PWR06
+U 1 1 61AA9D6C
+P 4950 4200
+F 0 "#PWR06" H 4950 3950 50  0001 C CNN
+F 1 "GND" H 4955 4027 50  0000 C CNN
+F 2 "" H 4950 4200 50  0001 C CNN
+F 3 "" H 4950 4200 50  0001 C CNN
+	1    4950 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 61AAB522
+P 4250 2750
+F 0 "R3" H 4320 2796 50  0000 L CNN
+F 1 "10k" H 4320 2705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4180 2750 50  0001 C CNN
+F 3 "~" H 4250 2750 50  0001 C CNN
+	1    4250 2750
+	1    0    0    -1  
+$EndComp
+Text GLabel 4250 2600 1    50   Input ~ 0
+3.3v
+Wire Wire Line
+	4750 3150 4950 3150
+Wire Wire Line
+	4950 2900 4950 3150
+Text GLabel 4950 2600 1    50   Input ~ 0
+3.3v
+$Comp
+L Device:R R4
+U 1 1 61AB1CFA
+P 4950 2750
+F 0 "R4" H 5020 2796 50  0000 L CNN
+F 1 "10k" H 5020 2705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4880 2750 50  0001 C CNN
+F 3 "~" H 4950 2750 50  0001 C CNN
+	1    4950 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 61AB20C7
+P 6900 4200
+F 0 "R6" H 6970 4246 50  0000 L CNN
+F 1 "10k" H 6970 4155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6830 4200 50  0001 C CNN
+F 3 "~" H 6900 4200 50  0001 C CNN
+	1    6900 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 3750 6900 3750
+$Comp
+L power:GND #PWR08
+U 1 1 61AB33CD
+P 6900 4350
+F 0 "#PWR08" H 6900 4100 50  0001 C CNN
+F 1 "GND" H 6905 4177 50  0000 C CNN
+F 2 "" H 6900 4350 50  0001 C CNN
+F 3 "" H 6900 4350 50  0001 C CNN
+	1    6900 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 3750 6900 4050
+Wire Wire Line
+	6750 3450 8950 3450
+Wire Wire Line
+	4950 3350 4250 3350
+Wire Wire Line
+	4250 2900 4250 3350
+Text GLabel 6950 3550 2    50   Input ~ 0
+gpio0
+Wire Wire Line
+	6950 3550 6750 3550
+Text GLabel 4950 3250 0    50   Input ~ 0
+adc
+Text GLabel 9100 1600 0    50   Input ~ 0
+adc
+$Comp
+L Device:R R8
+U 1 1 61AFD18A
+P 9300 1350
+F 0 "R8" H 9370 1396 50  0000 L CNN
+F 1 "10k" H 9370 1305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 9230 1350 50  0001 C CNN
+F 3 "~" H 9300 1350 50  0001 C CNN
+	1    9300 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 61AFD8FF
+P 9300 1850
+F 0 "R9" H 9370 1896 50  0000 L CNN
+F 1 "1k" H 9370 1805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 9230 1850 50  0001 C CNN
+F 3 "~" H 9300 1850 50  0001 C CNN
+	1    9300 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 61AFE817
+P 9300 2000
+F 0 "#PWR09" H 9300 1750 50  0001 C CNN
+F 1 "GND" H 9305 1827 50  0000 C CNN
+F 2 "" H 9300 2000 50  0001 C CNN
+F 3 "" H 9300 2000 50  0001 C CNN
+	1    9300 2000
+	1    0    0    -1  
+$EndComp
+Text GLabel 9300 1200 1    50   Input ~ 0
+B+
+Wire Wire Line
+	9300 1500 9300 1600
+Wire Wire Line
+	9100 1600 9300 1600
+Connection ~ 9300 1600
+Wire Wire Line
+	9300 1600 9300 1700
+NoConn ~ 5600 4350
+NoConn ~ 5700 4350
+NoConn ~ 5800 4350
+NoConn ~ 5900 4350
+NoConn ~ 6000 4350
+NoConn ~ 6100 4350
+Text GLabel 4100 3550 0    50   Input ~ 0
+gpio14
+Text GLabel 4100 3650 0    50   Input ~ 0
+gpio12
+Text GLabel 4100 3750 0    50   Input ~ 0
+gpio13
+Wire Wire Line
+	4100 3750 4950 3750
+Wire Wire Line
+	4950 3650 4100 3650
+Wire Wire Line
+	4950 3550 4100 3550
+Connection ~ 4950 3850
+Connection ~ 4950 3150
+$Comp
+L ESP8266:ESP-12E U1
+U 1 1 61AAF9E6
+P 5850 3450
+F 0 "U1" H 5850 4215 50  0000 C CNN
+F 1 "ESP-12E" H 5850 4124 50  0000 C CNN
+F 2 "ESP8266:ESP-12E_SMD" H 5850 3450 50  0001 C CNN
+F 3 "http://l0l.org.uk/2014/12/esp8266-modules-hardware-guide-gotta-catch-em-all/" H 5850 3450 50  0001 C CNN
+	1    5850 3450
+	1    0    0    -1  
+$EndComp
+Text GLabel 6750 3350 2    50   Input ~ 0
+gpio5
+Text GLabel 6750 3650 2    50   Input ~ 0
+gpio2
+$EndSCHEMATC

@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "colibri_01-rescue")(type "Legacy")(uri "${KIPRJMOD}/colibri_01-rescue.lib")(options "")(descr ""))
+)
